@@ -17,14 +17,14 @@
 
     <target name="dist" depends="compile">
 
-        <jar destfile="${distDir}/package ${DSTAMP}.jar" basedir="${buildDir}">
+        <jar destfile="${distDir}/TaxiAcountingSystem-${DSTAMP}.jar" basedir="${buildDir}">
 
             <manifest>
                 <attribute name="Build-By" value="${user.name}"/>
                 <attribute name="Main-Class" value="com.thoughtworks.TaxiIsRunning"/>
             </manifest>
         </jar>
-        <jar destfile="${distDir}/package-src-${DSTAMP}.jar" basedir="${srcDir}"/>
+        <jar destfile="${distDir}/TaxiAcountingSystem-src-${DSTAMP}.jar" basedir="${srcDir}"/>
     </target>
 
     <target name="clean">
